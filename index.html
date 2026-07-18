@@ -6,7 +6,7 @@
 <title>Cypher Legal — Brand Board</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --obsidian:#080810;
@@ -24,7 +24,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:'Plus Jakarta Sans',system-ui,sans-serif;
+  font-family:'Inter',-apple-system,system-ui,sans-serif;
   background:var(--obsidian);
   color:var(--frost);
   line-height:1.6;
@@ -37,8 +37,9 @@ body{
 }
 section{padding:5.5rem 0;border-bottom:1px solid var(--line)}
 h2.section-title{
-  font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:700;
-  line-height:1.15;margin:.6rem 0 2.6rem;letter-spacing:-.01em;
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(1.9rem,3.8vw,2.6rem);font-weight:600;
+  line-height:1.15;margin:.6rem 0 2.6rem;letter-spacing:0;
 }
 .grad-text{
   background:linear-gradient(120deg,var(--indigo-light),var(--amber-light));
@@ -55,13 +56,14 @@ h2.section-title{
 }
 .mark{width:150px;height:150px;margin:0 auto 2.4rem;display:block}
 .wordmark{
-  font-weight:800;letter-spacing:-.01em;
-  font-size:clamp(2.6rem,8vw,4.6rem);line-height:1;
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-weight:600;letter-spacing:.01em;
+  font-size:clamp(3rem,9vw,5.2rem);line-height:1;
 }
 .wordmark .cy{color:var(--indigo-light)}
 .wordmark .lg{color:var(--amber-light)}
 .tagline{
-  font-family:'Jura',sans-serif;font-weight:500;
+  font-family:'Inter',sans-serif;font-weight:500;
   text-transform:uppercase;color:var(--frost);
   margin-top:1.5rem;font-size:clamp(.7rem,1.7vw,1rem);
   letter-spacing:.42em;padding-left:.42em;
@@ -81,13 +83,13 @@ h2.section-title{
 .sw .chip{height:96px}
 .sw .meta{padding:.85rem 1rem}
 .sw .name{font-weight:600;font-size:.95rem}
-.sw .hex{font-family:'Jura',monospace;color:var(--muted);font-size:.82rem;letter-spacing:.05em}
+.sw .hex{font-family:'Inter',monospace;color:var(--muted);font-size:.82rem;letter-spacing:.05em}
 .sw .role{color:var(--muted);font-size:.78rem;margin-top:.2rem}
 .gradient-bar{
   height:64px;border-radius:12px;margin-top:1.4rem;
   background:linear-gradient(90deg,var(--indigo),var(--indigo-light),var(--amber-light),var(--amber));
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 1.2rem;font-family:'Jura';font-size:.78rem;letter-spacing:.12em;
+  padding:0 1.2rem;font-family:'Inter';font-size:.78rem;letter-spacing:.12em;
   color:rgba(255,255,255,.92);text-transform:uppercase;
 }
 
@@ -98,7 +100,7 @@ h2.section-title{
 .type-card .big{font-size:2.4rem;font-weight:800;line-height:1.1;letter-spacing:-.01em}
 .type-card .scale{margin-top:1.2rem;color:var(--muted)}
 .type-card .scale span{display:block;padding:.15rem 0}
-.jura-demo{font-family:'Jura';font-weight:600;font-size:1.9rem;letter-spacing:.14em;text-transform:uppercase}
+.jura-demo{font-family:'Inter';font-weight:600;font-size:1.9rem;letter-spacing:.14em;text-transform:uppercase}
 .weights{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.3rem}
 .weights b{
   font-weight:var(--w);border:1px solid var(--line);border-radius:8px;
@@ -111,7 +113,7 @@ h2.section-title{
   border:1px solid var(--line);border-radius:14px;padding:1.7rem;
   background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0));
 }
-.pillar .num{font-family:'Jura';font-weight:700;color:var(--amber-light);font-size:.95rem;letter-spacing:.1em}
+.pillar .num{font-family:'Inter';font-weight:700;color:var(--amber-light);font-size:.95rem;letter-spacing:.1em}
 .pillar h3{margin:.5rem 0 .5rem;font-size:1.1rem;font-weight:700}
 .pillar p{color:var(--muted);font-size:.94rem}
 
@@ -121,15 +123,38 @@ h2.section-title{
   border:1px solid var(--line);border-radius:12px;padding:1.2rem;
   font-size:.92rem;background:var(--slate-navy);
 }
-.node .n{font-family:'Jura';color:var(--indigo-light);font-size:.8rem;letter-spacing:.08em}
+.node .n{font-family:'Inter';color:var(--indigo-light);font-size:.8rem;letter-spacing:.08em}
 .node strong{display:block;margin:.35rem 0 .3rem;font-weight:600}
 .node span{color:var(--muted);font-size:.82rem}
 
+/* ---------- ILLUSTRATION / INCONSISTENCY ---------- */
+.ill-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-bottom:2rem}
+.ill{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--slate-navy)}
+.ill .imgwrap{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;text-align:center;padding:0;
+  background:#05050c;border-bottom:1px solid var(--line)}
+.ill .imgwrap img{width:100%;height:100%;object-fit:contain;display:block}
+.ill .ph{color:var(--muted);font-size:.8rem;line-height:1.5}
+.ill .ph b{display:block;color:var(--frost);margin-bottom:.35rem}
+.ill .cap{padding:1rem 1.2rem}
+.ill .cap .n{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-light);margin-bottom:.35rem}
+.ill .cap p{font-size:.85rem;color:var(--muted)}
+.clash-list{list-style:none}
+.clash-list li{display:flex;gap:.9rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.clash-list li:last-child{border-bottom:none}
+.clash-list .x{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:rgba(194,65,12,.16);
+  color:var(--amber-light);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+.clash-list .t{font-size:.95rem}
+.clash-list .t b{color:var(--frost);font-weight:600;display:block;margin-bottom:.15rem}
+.clash-list .t span{color:var(--muted)}
+.verdict{border-left:3px solid var(--amber);background:rgba(194,65,12,.08);border-radius:0 10px 10px 0;
+  padding:1.1rem 1.3rem;margin-top:1.8rem;color:var(--frost);font-size:.96rem}
+.verdict b{font-weight:700}
+
 footer{padding:3rem 0;text-align:center;color:var(--muted);font-size:.85rem}
-footer .tag{font-family:'Jura';letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}
+footer .tag{font-family:'Inter';letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}
 
 @media(max-width:820px){
-  .swatches,.type-grid,.pillars,.sitemap{grid-template-columns:1fr}
+  .swatches,.type-grid,.pillars,.sitemap,.ill-grid{grid-template-columns:1fr}
   section{padding:4rem 0}
 }
 </style>
@@ -156,7 +181,7 @@ footer .tag{font-family:'Jura';letter-spacing:.2em;text-transform:uppercase;font
     <div class="wordmark"><span class="cy">CYPHER</span><span class="lg">LEGAL</span></div>
     <div class="tagline">Intangible Assets. Tangible Outcomes.</div>
 
-    <p class="eyebrow">Encoded Authority — Brand System</p>
+    <p class="eyebrow">Encoded Authority — Brand System · Live at heroic-cranachan-7eb219.netlify.app</p>
     <p class="philo">Where the language of code meets the weight of law. A cipher rendered as a visual surface: structured, systematic, precise by intent.</p>
   </div>
 </header>
@@ -187,29 +212,35 @@ footer .tag{font-family:'Jura';letter-spacing:.2em;text-transform:uppercase;font
 <section>
   <div class="wrap">
     <p class="eyebrow">02 — Typography</p>
-    <h2 class="section-title">Type serves the architecture</h2>
+    <h2 class="section-title">As built on the live site</h2>
+    <p style="color:var(--muted);max-width:640px;margin:-1.6rem 0 2.2rem;font-size:.98rem">Read from the deployed site. A serif display face over a neutral sans. This is the real system, and it differs from the written docs (see the inconsistencies section below).</p>
 
     <div class="type-grid">
       <div class="type-card">
-        <div class="lab">Primary · Plus Jakarta Sans</div>
-        <div class="big">Aa Bb Cc</div>
+        <div class="lab">Display · Cormorant Garamond</div>
+        <div class="big" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:2.9rem;letter-spacing:0">Legal Intelligence</div>
         <div class="scale">
-          <span style="font-size:1.4rem;font-weight:700;color:var(--frost)">Headings — 700 / 800, tight tracking</span>
-          <span>Body — 400, line-height 1.6, measured for reading.</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;color:var(--frost)">Headings, hero, section titles</span>
+          <span>Serif, elegant, weighted to feel timeless rather than technical.</span>
         </div>
         <div class="weights">
-          <b style="--w:300">300</b><b style="--w:400">400</b><b style="--w:500">500</b>
-          <b style="--w:600">600</b><b style="--w:700">700</b><b style="--w:800">800</b>
+          <b style="--w:400;font-family:'Cormorant Garamond',serif">400</b>
+          <b style="--w:500;font-family:'Cormorant Garamond',serif">500</b>
+          <b style="--w:600;font-family:'Cormorant Garamond',serif">600</b>
+          <b style="--w:700;font-family:'Cormorant Garamond',serif">700</b>
         </div>
       </div>
       <div class="type-card">
-        <div class="lab">Accent · Jura</div>
-        <div class="jura-demo">Cypher Legal</div>
+        <div class="lab">Body · Inter</div>
+        <div class="big" style="font-size:2.4rem;font-weight:700">Aa Bb Cc</div>
         <div class="scale">
-          <span>Used for the tagline and structural labels.</span>
-          <span style="font-family:'Jura';letter-spacing:.3em;text-transform:uppercase;color:var(--amber-light);margin-top:.6rem">Intangible Assets</span>
+          <span>Body copy, navigation, labels, UI.</span>
+          <span style="letter-spacing:.28em;text-transform:uppercase;color:var(--amber-light);margin-top:.6rem;font-size:.8rem">Intangible Assets</span>
         </div>
-        <p class="scale" style="margin-top:1.2rem">Tracking is structural, not decorative — spacing as an argument for precision.</p>
+        <div class="weights">
+          <b style="--w:300">300</b><b style="--w:400">400</b><b style="--w:500">500</b>
+          <b style="--w:600">600</b><b style="--w:700">700</b>
+        </div>
       </div>
     </div>
   </div>
@@ -229,10 +260,40 @@ footer .tag{font-family:'Jura';letter-spacing:.2em;text-transform:uppercase;font
   </div>
 </section>
 
+<!-- ILLUSTRATION / INCONSISTENCY -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">04 — Illustration · client-supplied</p>
+    <h2 class="section-title">The illustrations do not fit the system</h2>
+    <p style="color:var(--muted);max-width:660px;margin:-1.6rem 0 2.2rem;font-size:.98rem">These portraits were supplied as the look the client wants. Placed against the brand as built, they break it. The frames below load <code>illustration-1.png</code> and <code>illustration-2.png</code> from the same folder as this page.</p>
+
+    <div class="ill-grid">
+      <div class="ill">
+        <div class="imgwrap"><img src="illustration-1.png" alt="Caricature concept for Jevon Louis" loading="lazy"></div>
+        <div class="cap"><div class="n">Reference 1 · illustration-1.png</div><p>Cartoon caricature, broad grin, holographic practice-area graphics, framed awards, a trophy.</p></div>
+      </div>
+      <div class="ill">
+        <div class="imgwrap"><img src="illustration-2.png" alt="Hero portrait render for Jevon Louis" loading="lazy"></div>
+        <div class="cap"><div class="n">Reference 2 · illustration-2.png</div><p>Glowing AI hero render, gavel and IP-law book, gold "Patent Star" trophy, tech-lit skyline.</p></div>
+      </div>
+    </div>
+
+    <ul class="clash-list">
+      <li><span class="x">1</span><div class="t"><b>Serif restraint vs cartoon energy</b><span>The system is Cormorant Garamond on near-black: quiet, timeless, editorial. The illustrations are loud, busy, and grinning. Opposite registers.</span></div></li>
+      <li><span class="x">2</span><div class="t"><b>Off-palette colour</b><span>Bright cyan holograms, gold trophies, a red tie, blue glow. None of it belongs to the indigo, amber, and obsidian palette.</span></div></li>
+      <li><span class="x">3</span><div class="t"><b>Self-promotion vs quiet authority</b><span>Both images foreground the man and his awards. The brand foregrounds the mark and restraint. Trophy-flaunting undercuts the seniority the system signals.</span></div></li>
+      <li><span class="x">4</span><div class="t"><b>Two different styles, no language</b><span>One is a flat caricature, the other a photoreal render. They do not even agree with each other, so there is no single illustration system to adopt.</span></div></li>
+      <li><span class="x">5</span><div class="t"><b>AI-render finish</b><span>Warped text, invented award names, and dreamy lighting read as AI-generated. On a law firm site that erodes trust rather than building it.</span></div></li>
+    </ul>
+
+    <div class="verdict"><b>Recommendation.</b> Do not add these to the system. If a human element is needed, use restrained duotone photography on the obsidian field, or a single line-based illustration language drawn from the C lettermark. Both keep the authority the brand is built on.</div>
+  </div>
+</section>
+
 <!-- SITE STRUCTURE -->
 <section style="border-bottom:none">
   <div class="wrap">
-    <p class="eyebrow">04 — Website Structure</p>
+    <p class="eyebrow">05 — Website Structure · live</p>
     <h2 class="section-title">Applied to the site</h2>
     <div class="sitemap">
       <div class="node"><div class="n">01 · Light</div><strong>Hero</strong><span>AI-powered legal intelligence. Dual CTAs.</span></div>
